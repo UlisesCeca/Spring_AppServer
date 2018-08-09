@@ -1,1 +1,1 @@
-# Spring_Template
+# Apps generator server
