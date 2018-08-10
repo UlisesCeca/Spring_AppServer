@@ -1,6 +1,7 @@
 package com.example.ulises.appserver.rest.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.validation.constraints.NotNull;
@@ -9,6 +10,7 @@ import javax.validation.constraints.NotNull;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AppDTO {
     private String id;
-    @NotNull(message = "name must not be null")
     private String name;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private String password;
 }

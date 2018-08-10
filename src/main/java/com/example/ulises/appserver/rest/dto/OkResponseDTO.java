@@ -4,6 +4,6 @@ import lombok.Builder;
 import lombok.Data;
 
 @Builder @Data
-public class ErrorDTO {
+public class OkResponseDTO {
     private String message;
 }
