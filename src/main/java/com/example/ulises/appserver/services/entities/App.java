@@ -1,14 +1,14 @@
-package com.example.ulises.template.services.entities;
+package com.example.ulises.appserver.services.entities;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "Users")
+@Document(collection = "Apps")
 @Data
-public class User {
+public class App {
     @Id
-    private String username;
-    private String surname;
+    private String id;
+    private String name;
     private String password;
 }

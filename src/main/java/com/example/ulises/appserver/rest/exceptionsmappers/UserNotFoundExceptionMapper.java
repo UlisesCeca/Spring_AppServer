@@ -1,7 +1,7 @@
-package com.example.ulises.template.rest.exceptionsmappers;
+package com.example.ulises.appserver.rest.exceptionsmappers;
 
-import com.example.ulises.template.rest.dto.ErrorDTO;
-import com.example.ulises.template.services.exceptions.UserNotFoundException;
+import com.example.ulises.appserver.rest.dto.ErrorDTO;
+import com.example.ulises.appserver.services.exceptions.UserNotFoundException;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;

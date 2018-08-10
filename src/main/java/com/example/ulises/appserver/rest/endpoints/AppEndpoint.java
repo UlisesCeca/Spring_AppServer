@@ -1,8 +1,8 @@
-package com.example.ulises.template.rest.endpoints;
+package com.example.ulises.appserver.rest.endpoints;
 
-import com.example.ulises.template.rest.dto.UserDTO;
-import com.example.ulises.template.services.entities.User;
-import com.example.ulises.template.services.UserService;
+import com.example.ulises.appserver.rest.dto.AppDTO;
+import com.example.ulises.appserver.services.entities.App;
+import com.example.ulises.appserver.services.AppService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,18 +16,18 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Component
-@Path("/users")
-public class UserEndpoint {
+@Path("/apps")
+public class AppEndpoint {
     @Autowired
     private ModelMapper modelMapper;
     @Autowired
-    private UserService userService;
+    private AppService appService;
 
     @POST
-    @Path("/get")
+    @Path("/new")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response hello(@Valid @NotNull(message = "testDTO must not be null") final UserDTO testDTO) {
-        this.userService.getUser(this.modelMapper.map(testDTO, User.class));
+    public Response hello(@Valid @NotNull(message = "testDTO must not be null") final AppDTO appDTO) {
+        this.appService.insert(this.modelMapper.map(appDTO, App.class));
         return Response.noContent().build();
     }
 
