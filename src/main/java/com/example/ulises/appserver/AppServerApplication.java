@@ -2,7 +2,9 @@ package com.example.ulises.appserver;
 
 import com.example.ulises.appserver.rest.endpoints.AppEndpoint;
 import com.example.ulises.appserver.rest.exceptionsmappers.AppAlreadyExistsExceptionMapper;
+import com.example.ulises.appserver.rest.exceptionsmappers.InternalServerErrorMapper;
 import com.example.ulises.appserver.rest.exceptionsmappers.NoAppsExceptionMapper;
+import com.example.ulises.appserver.rest.exceptionsmappers.NotFoundMapper;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
@@ -23,6 +25,8 @@ public class AppServerApplication {
 		resourceConfig.register(AppEndpoint.class);
 		resourceConfig.register(AppAlreadyExistsExceptionMapper.class);
 		resourceConfig.register(NoAppsExceptionMapper.class);
+		resourceConfig.register(NotFoundMapper.class);
+		resourceConfig.register(InternalServerErrorMapper.class);
 		return resourceConfig;
 	}
 

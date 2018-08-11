@@ -9,7 +9,6 @@ import javax.validation.constraints.NotNull;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AppDTO {
-    private String id;
     private String name;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
