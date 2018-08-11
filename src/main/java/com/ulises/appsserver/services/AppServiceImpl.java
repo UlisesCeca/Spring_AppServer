@@ -1,10 +1,9 @@
-package com.example.ulises.appserver.services;
+package com.ulises.appsserver.services;
 
-import com.example.ulises.appserver.services.entities.App;
-import com.example.ulises.appserver.services.exceptions.AppAlreadyExistsException;
-import com.example.ulises.appserver.services.exceptions.NoAppsException;
-import com.example.ulises.appserver.services.repositories.AppRepository;
-import org.springframework.data.mongodb.core.query.Query;
+import com.ulises.appsserver.services.entities.App;
+import com.ulises.appsserver.services.exceptions.AppAlreadyExistsException;
+import com.ulises.appsserver.services.exceptions.NoAppsException;
+import com.ulises.appsserver.services.repositories.AppRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 

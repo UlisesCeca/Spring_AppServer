@@ -1,4 +1,4 @@
-package com.example.ulises.appserver.rest.dto;
+package com.ulises.appsserver.rest.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

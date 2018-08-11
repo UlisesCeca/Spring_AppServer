@@ -1,4 +1,4 @@
-package com.example.ulises.appserver.constants;
+package com.ulises.appsserver.constants;
 
 public class Constants {
     public static final String RESPONSE_ERROR_APP_EXISTS = "There is already an App with this name.";

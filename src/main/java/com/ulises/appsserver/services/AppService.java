@@ -1,6 +1,6 @@
-package com.example.ulises.appserver.services;
+package com.ulises.appsserver.services;
 
-import com.example.ulises.appserver.services.entities.App;
+import com.ulises.appsserver.services.entities.App;
 
 import java.util.List;
 

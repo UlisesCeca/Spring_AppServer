@@ -1,10 +1,10 @@
-package com.example.ulises.appserver.rest.endpoints;
+package com.ulises.appsserver.rest.endpoints;
 
-import com.example.ulises.appserver.constants.Constants;
-import com.example.ulises.appserver.rest.dto.AppDTO;
-import com.example.ulises.appserver.rest.dto.ResponseOKDTO;
-import com.example.ulises.appserver.services.entities.App;
-import com.example.ulises.appserver.services.AppService;
+import com.ulises.appsserver.constants.Constants;
+import com.ulises.appsserver.rest.dto.AppDTO;
+import com.ulises.appsserver.rest.dto.ResponseOKDTO;
+import com.ulises.appsserver.services.entities.App;
+import com.ulises.appsserver.services.AppService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,8 +1,8 @@
-package com.example.ulises.appserver.rest.exceptionsmappers;
+package com.ulises.appsserver.rest.exceptionsmappers;
 
-import com.example.ulises.appserver.constants.Constants;
-import com.example.ulises.appserver.rest.dto.ErrorDTO;
-import com.example.ulises.appserver.services.exceptions.NoAppsException;
+import com.ulises.appsserver.constants.Constants;
+import com.ulises.appsserver.rest.dto.ErrorDTO;
+import com.ulises.appsserver.services.exceptions.NoAppsException;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;

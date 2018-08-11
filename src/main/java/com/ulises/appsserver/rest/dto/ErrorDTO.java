@@ -1,9 +1,9 @@
-package com.example.ulises.appserver.rest.dto;
+package com.ulises.appsserver.rest.dto;
 
 import lombok.Builder;
 import lombok.Data;
 
 @Builder @Data
-public class ResponseOKDTO {
+public class ErrorDTO {
     private final String message;
 }

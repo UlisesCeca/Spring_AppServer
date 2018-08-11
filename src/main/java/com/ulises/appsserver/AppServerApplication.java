@@ -1,10 +1,10 @@
-package com.example.ulises.appserver;
+package com.ulises.appsserver;
 
-import com.example.ulises.appserver.rest.endpoints.AppEndpoint;
-import com.example.ulises.appserver.rest.exceptionsmappers.AppAlreadyExistsExceptionMapper;
-import com.example.ulises.appserver.rest.exceptionsmappers.InternalServerErrorMapper;
-import com.example.ulises.appserver.rest.exceptionsmappers.NoAppsExceptionMapper;
-import com.example.ulises.appserver.rest.exceptionsmappers.NotFoundMapper;
+import com.ulises.appsserver.rest.endpoints.AppEndpoint;
+import com.ulises.appsserver.rest.exceptionsmappers.AppAlreadyExistsExceptionMapper;
+import com.ulises.appsserver.rest.exceptionsmappers.InternalServerErrorMapper;
+import com.ulises.appsserver.rest.exceptionsmappers.NoAppsExceptionMapper;
+import com.ulises.appsserver.rest.exceptionsmappers.NotFoundMapper;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
