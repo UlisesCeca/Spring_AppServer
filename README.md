@@ -1,1 +1,1 @@
-# Apps generator server
+# Apps server
