@@ -7,14 +7,13 @@ import com.ulises.appsserver.services.entities.App;
 import com.ulises.appsserver.services.AppService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
@@ -39,7 +38,10 @@ public class AppEndpoint {
     @GET
     @Path("/getAll")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getAll() {
+    public Response getAll(@HeaderParam("Authorization") final String userAgent) {
+
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        System.out.println(userAgent.equalsIgnoreCase("a"));
         List<AppDTO> appDTOList = this.appService.getAll()
                 .stream()
                 .map(app -> this.modelMapper.map(app, AppDTO.class))
